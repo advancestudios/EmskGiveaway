@@ -53,7 +53,7 @@ module.exports = {
                     {
                         type: 10, // Text display
                         content: `### ⚡ DROP DE ECONOMÍA DISPONIBLE
-¡Un nuevo drop misterioso ha aparecido! Sé el más rápido en pulsar el botón inferior para reclamar tu recompensa de economía.
+¡Un nuevo drop misterioso ha aparecido! Sé el más rápido en pulsar el botón inferior para reclamar tu recompensa de economía @here
 
 > 💵 **Monto del Drop:** \`$${randomAmount.toLocaleString()}\`
 > 🟢 **Estado:** \`Disponible\``
