@@ -1,0 +1,13 @@
+{
+  "name": "emskdrops",
+  "version": "1.0.0",
+  "description": "Bot de econom\u00eda usando Componentes V2 de Discord",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "discord.js": "^14.14.1",
+    "dotenv": "^16.4.5"
+  }
+}
