@@ -6,7 +6,7 @@ module.exports = {
         .setName('daily')
         .setDescription('Recoge tu recompensa diaria de dinero.'),
     async execute(interaction) {
-        const monedas = Math.floor(Math.random() * 1500) + 2500;
+        const monedas = Math.floor(Math.random() * 150001) + 50000;
 
         await publicarReclamable(interaction, {
             titulo: '📅 Recompensa Diaria',
