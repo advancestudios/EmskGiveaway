@@ -6,15 +6,13 @@ module.exports = {
         .setName('drop')
         .setDescription('¡Suelta un drop de dinero aleatorio en el canal!')
         .setDMPermission(false),
+
     async execute(interaction) {
-        const esPremioMayor = Math.random() < 0.004;
-        const monedas = esPremioMayor
-            ? 5_000_000
-            : Math.floor(Math.pow(Math.random(), 2.2) * 1_000_000) + 500;
+        const monedas = Math.floor(Math.random() * 150001) + 50000;
 
         await publicarReclamable(interaction, {
             aviso: '@here ¡Atención todos, hay dinero en juego!',
-            titulo: esPremioMayor ? '🌟 ¡DROP PREMIO MAYOR!' : '🎁 ¡Nuevo Drop de Dinero!',
+            titulo: '🎁 ¡Nuevo Drop de Dinero!',
             descripcion: '¡Se ha soltado un drop en este canal! ¡Corre a reclamarlo, solo uno se lo lleva!',
             premio: { monedas },
             textoBoton: 'Reclamar drop',
